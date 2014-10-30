@@ -1,0 +1,269 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_body"
+    tools:context=".MainActivity" >
+
+    <!-- HEADER -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_header" >
+
+        <RelativeLayout
+            android:id="@+id/title_h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/title_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/img_flash"
+                android:text="@string/annuaire"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <ImageView
+                android:id="@+id/img_flash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_header_flash" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- FIN DU HEADER -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/img_single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_single" />
+
+			<TextView
+            android:id="@+id/txtNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/img_single"
+            android:text="@string/about_about"
+            android:textSize="21dp" />
+    </RelativeLayout>
+        <!-- FOOTER -->
+   <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_header" >
+    </RelativeLayout>
+    <!-- FIN DU FOOTER -->
+
+   <Button
+       android:id="@+id/back_about"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="12dp"
+       android:layout_marginTop="-5dp"
+       android:layout_alignTop="@+id/relativeLayout2"
+       android:layout_below="@+id/relativeLayout2"
+       android:background="@drawable/icon_back" />
+
+   <RelativeLayout
+       android:id="@+id/relativeLayout3"
+       android:layout_width="wrap_content"
+       android:layout_marginTop="15dp"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/relativeLayout2"
+       android:layout_below="@+id/back_about" >
+
+       <ImageView
+           android:id="@+id/txtPhoto"
+           android:layout_width="70dp"
+           android:layout_height="70dp"
+           android:src="@drawable/icon_about_home" />
+
+       <RelativeLayout
+           android:id="@+id/info_pad"
+           android:layout_width="250dp"
+           android:layout_height="70dp"
+           android:layout_marginLeft="10dp"
+           android:layout_toRightOf="@id/txtPhoto"
+           android:background="#e6e6e6" >
+            <TextView
+            android:id="@+id/txtAdresse"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="4dp"
+            android:layout_height="wrap_content"
+            android:text="15 rue du ponds neuf"
+            android:textSize="13dp" />
+            <TextView
+            android:id="@+id/txtAdresse2"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="4dp"
+            android:layout_below="@id/txtAdresse"
+            android:layout_height="wrap_content"
+            android:text="paris 75012"
+            android:textSize="12dp" />
+            <TextView
+            android:id="@+id/txtTel"
+            android:layout_width="wrap_content"
+            android:layout_alignTop="@id/txtAdresse"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="4dp"
+       		android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:text="01.45.23.26.15"
+            android:textSize="11.5dp" />
+
+           <RelativeLayout
+               android:id="@+id/info_net"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:layout_alignParentRight="true"
+               android:layout_marginBottom="3dp"
+               android:layout_marginRight="4dp" >
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="right"
+                android:text="ampejef@gmaeiol.com"
+                android:textSize="11.5dp" />
+
+            <TextView
+                android:id="@+id/txtSiteWeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/txtEmail"
+                android:layout_below="@id/txtEmail"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:text="www.ampfdfdf.fr/connec"
+                android:textSize="11.5dp" />
+
+            </RelativeLayout>
+       </RelativeLayout>
+       
+   </RelativeLayout>
+
+   <RelativeLayout
+       android:id="@+id/relative_horaire"
+       android:layout_width="330dp"
+       android:layout_height="55dp"
+       android:layout_marginTop="6dp"
+       android:layout_alignLeft="@+id/relativeLayout3"
+       android:layout_below="@+id/relativeLayout3"
+       android:background="#e6e6e6" >
+
+       <TextView
+           android:id="@+id/txtHoraire"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/msg1_about"
+           android:layout_marginTop="3dp"
+           android:layout_marginRight="5dp"
+           android:layout_marginLeft="5dp"
+           android:textSize="13sp" />
+
+        </RelativeLayout>
+        
+   <RelativeLayout
+       android:id="@+id/relativeLayout5"
+       android:layout_width="330dp"
+       android:layout_height="60dp"
+       android:layout_marginTop="6dp"
+       android:layout_alignLeft="@+id/relative_horaire"
+       android:layout_below="@+id/relative_horaire"
+       android:background="#e6e6e6" >
+              <TextView
+           android:id="@+id/txtDescription"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/msg1_about"
+           android:layout_marginTop="3dp"
+           android:layout_marginRight="5dp"
+           android:layout_marginLeft="5dp"
+           android:textSize="13sp" />
+        </RelativeLayout>
+        
+   <RelativeLayout
+       android:id="@+id/relativeLayout9"
+       android:layout_width="330dp"
+       android:layout_height="20dp"
+       android:layout_marginTop="6dp"
+       android:layout_alignLeft="@+id/relativeLayout5"
+       android:layout_below="@id/relativeLayout5"
+       android:background="#e6e6e6" >
+                      <Button
+		           android:id="@+id/yourpos"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:text="Votre position"
+		           android:background="#ff6c6f"
+		           android:textSize="13sp" />
+		              
+		              <Textview
+		                  android:id="@+id/distance"
+		                  android:layout_width="wrap_content"
+		                  android:layout_height="wrap_content"
+		                  android:layout_toRightOf="@+id/yourpos"
+		                  android:layout_marginLeft="200dp"
+		                  android:text="kezezm"
+		                  android:textSize="13sp" />
+
+		              <Button
+		           android:id="@+id/placeloc"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+		           android:text="Lieu"
+		           android:background="#ff6c6f"
+		           android:textSize="13sp" />
+              </RelativeLayout>
+        <RelativeLayout
+		             
+		            android:id="@+id/relativeLayout6"
+		            android:layout_width="330dp"
+		            android:layout_marginTop="6dp"
+    	    		android:layout_alignLeft="@id/relativeLayout9"
+		            android:layout_height="210dp"
+		            android:layout_below="@id/relativeLayout9"
+		            android:background="#e6e6e6" >
+		
+		 <fragment
+		    android:id="@+id/gmap"
+		    android:layout_centerInParent="true"
+		    android:layout_width="320dp"
+		    android:layout_height="200dp"
+		    class="com.google.android.gms.maps.SupportMapFragment" />
+		</RelativeLayout>
+</RelativeLayout>

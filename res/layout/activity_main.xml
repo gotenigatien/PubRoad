@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_body"
+    tools:context=".MainActivity" >
+
+    <!-- HEADER -->
+
+   
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+      android:layout_centerHorizontal="true"
+      android:background="@drawable/bg_header">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true" >
+
+    <TextView
+        android:id="@+id/title_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/img_flash"
+        android:text="@string/annuaire"
+        android:textSize="35sp" />
+
+    <ImageView
+        android:id="@+id/img_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/search"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_header_flash" />
+</RelativeLayout>
+    </RelativeLayout>
+    <!-- FIN DU HEADER -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/search_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/search"
+            android:layout_alignBottom="@+id/search"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/search"
+            android:text="@string/search"
+            android:textStyle="bold"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/icon_search_home" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="24dp" >
+
+        <Button
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/search"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_history_home" />
+
+        <TextView
+            android:id="@+id/about_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/history"
+            android:layout_alignBottom="@+id/history"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/history"
+            android:text="@string/history"
+            android:textStyle="bold"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="25dp" >
+
+        <Button
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/relativeLayout1"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/icon_about_home" />
+
+        <TextView
+            android:id="@+id/history_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/about"
+            android:layout_alignBottom="@+id/about"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/about"
+            android:text="@string/about"
+            android:textStyle="bold"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+ <!-- FOOTER -->
+   <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_header" >
+    </RelativeLayout>
+    <!-- FIN DU FOOTER -->
+
+</RelativeLayout>

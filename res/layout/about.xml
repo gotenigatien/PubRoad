@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_body"
+    tools:context=".MainActivity" >
+
+    <!-- HEADER -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_header" >
+
+        <RelativeLayout
+            android:id="@+id/title_h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/title_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/img_flash"
+                android:text="@string/annuaire"
+                android:textSize="35sp" />
+
+            <ImageView
+                android:id="@+id/img_flash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_header_flash" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- FIN DU HEADER -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+         android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/img_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_about" />
+
+			<TextView
+            android:id="@+id/about_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@+id/img_about"
+            android:text="@string/about_about"
+            android:textSize="21dp" />
+        <Button
+            android:id="@+id/back_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="142dp"
+            android:layout_toRightOf="@+id/about_about"
+            android:background="@drawable/icon_back" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+       
+         android:layout_marginTop="20dp" >
+        
+    <TextView
+        android:id="@+id/msg1_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_about"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="middle"
+         android:gravity="center"
+        android:text="@string/msg1_about"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/msg2_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msg1_about"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+         android:gravity="center"
+        android:text="@string/msg2_about"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/msg3_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msg2_about"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+         android:gravity="center"
+        android:text="@string/msg3_about"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/msg4_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msg3_about"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="@string/msg4_about"
+         android:gravity="center"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/msg5_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msg4_about"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="@string/msg5_about"
+         android:gravity="center"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/names_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msg5_about"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="@string/names_about"
+         android:gravity="center"
+        android:textSize="13sp" />
+        </RelativeLayout>
+        <!-- FOOTER -->
+   <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_header" >
+    </RelativeLayout>
+    <!-- FIN DU FOOTER -->
+</RelativeLayout>

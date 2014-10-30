@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+<RelativeLayout
+		        android:id="@+id/relativeLayout4"
+		        android:layout_width="310dp"
+		        android:layout_height="50dp" >
+	    
+		    <Button
+		        android:id="@+id/result_history"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/tri_asc"
+		        android:background="@drawable/bg_result_history" />
+
+	        <RelativeLayout
+	            android:id="@+id/relativeLayout5"
+	            android:layout_width="125dp"
+	            android:layout_height="50dp"
+	            android:layout_centerVertical="true" >
+
+            <ImageView
+	            android:id="@+id/img_pointer_result"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="5dp"
+	            android:src="@drawable/pointer_result"
+	             />
+			<TextView
+		            android:id="@+id/txtID"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_toEndOf="@+id/img_pointer_result"
+					android:visibility="invisible"
+		            android:textSize="13sp"
+		            android:focusable="false" />
+	        <TextView
+	            android:id="@+id/history_ex"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true"
+	            android:text="@string/history_ex"
+	            android:textSize="15sp" />
+
+			 </RelativeLayout> 
+ 			<RelativeLayout
+	            android:id="@+id/relativeLayout6"
+	            android:layout_width="185dp"
+	            android:layout_height="50dp"
+	            android:layout_centerVertical="true"
+	            android:layout_toRightOf="@+id/relativeLayout5" >
+
+	         <TextView
+	             android:id="@+id/history_ad"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:layout_centerInParent="true"
+	             android:text="@string/history_ad"
+	             android:textSize="12sp" />
+
+			</RelativeLayout>
+			
+		 </RelativeLayout>
+</RelativeLayout>
