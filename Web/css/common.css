@@ -1,0 +1,572 @@
+#hidden,
+#edit_fiche {
+    display: none
+}
+.overlay,
+.overlaysingle {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    display: none;
+	z-index:999999999;
+}
+.overlay .deletesure,
+.overlay .popin {
+    width: 450px;
+    padding: 20px;
+    min-height: 75px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -245px;
+    background: #fff;
+    border: 1px solid #000;
+    text-align: center;
+    -webkit-box-shadow: 3px 3px 7px 0px #555;
+    box-shadow: 3px 3px 7px 0px #555;
+    font-size: 17px;
+}
+.overlay .deletesure a,
+.overlay .popin a,
+.overlaysingle .popinsingle a {
+    color: #fff !important;
+    text-transform: uppercase;
+    background: #ff6c6f;
+    font-size: 17px;
+    padding: 8px 8px 5px 8px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 10px 5px 10px;
+    margin: 0 2px;
+}
+.overlay .deletesure a:hover,
+.overlay .popin a:hover,
+.overlaysingle .popinsingle a:hover {
+    background: #d95b5d
+}
+
+.overlaysingle .popinsingle a {
+margin:10px 0 0 0;
+}
+.overlaysingle .popinsingle {
+    width: 650px;
+    padding: 20px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -325px;
+    background: #fff;
+    border: 1px solid #000;
+    text-align: center;
+    -webkit-box-shadow: 3px 3px 7px 0px #555;
+    box-shadow: 3px 3px 7px 0px #555;
+    font-size: 17px;
+	text-transform:none;
+}
+.overlaysingle .popinsingle .single {
+    font-size: 17px;
+}
+.overlaysingle .popinsingle .photo {
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin-right: 20px;
+    background: #000;
+}
+.overlaysingle .popinsingle .right {
+    width: 510px;
+    float: left;
+}
+
+#gestion .single .right h3 {
+    font-size: 22px;
+    margin: 0 0 15px 0;
+    font-weight: bold;
+    text-align: left;
+}
+#gestion .single .right .details {
+    width: 480px;
+    float: left;
+    padding: 15px;
+    background: #e6e6e6;
+}
+#gestion .single .right .details .adresse {
+    float: left;
+    width: 265px !important;
+	text-align:left;
+}
+
+#gestion .single .right .details .tel {
+    width: 210px;
+    float: right;
+    text-align: right;
+}
+
+#gestion .single .hours {
+    background: #e6e6e6;
+    padding: 15px;
+    width: 620px;
+    margin: 5px 0;
+	text-align:left;
+}
+#gestion .single .descrip {
+    background: #e6e6e6;
+    padding: 15px;
+    width: 620px;
+    margin: 5px 0;
+	text-align:left;
+}
+
+.error_strings {
+    font-family: Verdana;
+    font-size: 14px;
+    color: #660000;
+    background-color: #ff0;
+}
+body {
+    background: #e6e6e6;
+    font-family: 'Brixton', Arial, Sans-Serif;
+    font-size: 14px;
+    color: #373737;
+}
+#wrapper {
+    width: 900px;
+    margin: 0 auto;
+    background: url(../img/bg-body.jpg) repeat #ffffff;
+    padding-bottom: 150px;
+    border-bottom: 5px solid #ff6c6f;
+}
+#wrapper h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 28px;
+}
+#wrapper section {
+    margin-top: 50px
+}
+#header {
+    background: #ff6c6f;
+    font-size: 35px;
+    text-align: right;
+    padding: 25px 30px 20px 30px;
+}
+#header a {
+    color: #fff;
+    text-decoration: none;
+}
+#header h1 {
+    background: url(../img/logo_annuaire.png) no-repeat 0 0;
+    padding-left: 45px;
+    display: inline;
+}
+nav {
+    margin-top: 30px
+}
+nav ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    list-style: none;
+    margin: 0 5px;
+}
+nav ul li a {
+    padding: 7px 10px 3px;
+    font-size: 16px;
+    background: #313131;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav ul li a.active {
+    background: #000;
+    color: #ff6c6f;
+}
+section#connexion {
+    margin: 150px auto 0 auto;
+    width: 430px;
+}
+section#connexion h2 {
+    background: url(../img/icon-secure.png) no-repeat 0 0;
+    padding-left: 25px;
+    line-height: 22px;
+}
+section#connexion form input[type=text],
+section#connexion form input[type=password] {
+    width: 400px;
+    height: 35px;
+    line-height: 35px;
+    font-style: italic;
+    padding: 0 15px;
+    color: #171717;
+    font-size: 17px;
+    background: #e6e6e6;
+    display: block;
+    margin-bottom: 5px;
+    box-shadow: none;
+    border: none;
+}
+section#connexion form input[type=submit] {
+    padding: 8px 8px 5px 8px;
+    background: #ff6c6f;
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: none;
+    border: none;
+}
+#gestion {
+    padding: 30px
+}
+#gestion.particular header h2 {
+    background: url(../img/icon-particular.png) no-repeat 0 0
+}
+#gestion.webservices header h2 {
+    background: url(../img/icon-webservices.png) no-repeat 0 0
+}
+#gestion header h2 {
+    background: url(../img/icon-business.png) no-repeat 0 0;
+    padding-left: 35px;
+    width: 70%;
+    float: left;
+}
+#gestion header a {
+    float: right;
+    color: #fff;
+    text-transform: uppercase;
+    background: #ff6c6f;
+    font-size: 17px;
+    padding: 8px 8px 5px 8px;
+    display: inline-block;
+    text-decoration: none;
+}
+#gestion header a:hover {
+    background: #d95b5d
+}
+#gestion header a.close_add {
+    padding: 8px 10px 5px 10px;
+    margin-right: 5px;
+}
+#gestion .search {
+    padding: 8px 8px 5px 8px;
+    background: #ff6c6f;
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+}
+#gestion .close_search {
+    float: right;
+    color: #fff;
+    text-transform: uppercase;
+    background: #ff6c6f;
+    font-size: 17px;
+    padding: 8px 8px 5px 8px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 10px 5px 10px;
+}
+#gestion .close_search:hover {
+    background: #d95b5d
+}
+#gestion #search {
+    background: #ff6c6f;
+    margin: 0px 0 10px 0;
+    padding: 15px;
+}
+#gestion #search label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+#gestion #search label.where {
+    margin-top: 20px
+}
+#gestion #search input[type=text] {
+    width: 450px;
+    float: none;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    background: url(../img/icon-loupe.png) 10px center no-repeat #e6e6e6;
+    float: none;
+    margin-right: 5px;
+    padding-left: 35px;
+}
+#gestion #search input[type=submit] {
+    background: #d95b5d;
+    float: none;
+    margin: 20px 0 0 0;
+}
+#gestion #new,
+#gestion .close_add,
+#gestion #search,
+#gestion .close_search {
+    display: none
+}
+#gestion form {
+    margin-bottom: 100px
+}
+#gestion form .text,
+#gestion form textarea {
+    width: 810px;
+    height: 35px;
+    line-height: 35px;
+    font-style: italic;
+    padding: 0 15px;
+    color: #171717;
+    font-size: 17px;
+    background: #e6e6e6;
+    display: block;
+    margin-bottom: 5px;
+    box-shadow: none;
+    border: none;
+    float: left;
+}
+#gestion form .mid {
+    width: 387px;
+    margin-right: 5px;
+}
+#gestion form .nomarg {
+    margin-right: 0
+}
+#gestion form textarea {
+    height: 150px;
+}
+#gestion form .error{
+outline:1px solid #ff6c6f !important;
+}
+#gestion form input[type=submit] {
+    padding: 8px 8px 5px 8px;
+    background: #ff6c6f;
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: none;
+    border: none;
+    float: right;
+    margin-top: 20px;
+}
+#gestion form .close_edit {
+    padding: 8px 8px 5px 8px;
+    background: #ff6c6f;
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: none;
+    border: none;
+    float: right;
+    margin-top: 20px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+#gestion form .customfile-input {
+    position: absolute;
+    height: 35px;
+    width: 262px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: progid:dximagetransform.microsoft.alpha(opacity=0);
+    z-index: 999;
+    top: 0;
+    right: 0;
+}
+#gestion form .customfile {
+    width: 825px;
+    background: #e6e6e6;
+    cursor: pointer;
+    overflow: hidden;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 0 0 15px;
+    position: relative;
+    float: left;
+}
+#gestion form .customfile-disabled {
+    opacity: .5;
+    filter: progid:dximagetransform.microsoft.alpha(opacity=0);
+    cursor: default;
+}
+#gestion form .customfile-feedback {
+    display: block;
+    margin: 0;
+    font-size: 17px;
+    color: #777;
+    font-style: italic;
+    padding: 0;
+}
+#gestion form .customfile-feedback-populated {
+    color: #222
+}
+#gestion form .customfile-button {
+    background: #c4c4c4;
+    color: #fff;
+    float: right;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+#gestion #list {
+    border: none;
+    width: 840px;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 10px;
+}
+#gestion #list th {
+    background: #c4c4c4;
+    text-align: left;
+    text-transform: uppercase;
+    height: 40px;
+    padding-right: 15px;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+#gestion #list th.headerSortUp {
+    background: url(../img/asc.gif) no-repeat right center #c4c4c4
+}
+#gestion #list th.headerSortDown {
+    background: url(../img/desc.gif) no-repeat right center #c4c4c4
+}
+#gestion #list tr {
+    height: 40px;
+    vertical-align: middle;
+    background: #f0f0f0;
+    position: relative;
+}
+#gestion #list tr:hover .relati .hover {
+    display: block
+}
+
+.linksingle{display:block;
+width:750px;
+height:40px;
+}
+#gestion #list td .relati {
+    position: relative;
+}
+#gestion #list td .relati .hover {
+    position: absolute;
+    top: -28px;
+    left: -3px;
+    height: 40px;
+    width: 840px;
+    background: url(../img/tr_hover.png) 0 0 no-repeat #313131 !important;
+    display: none;
+}
+#gestion #list td .relati .hover .edit{
+	position:absolute;
+	right:55px;
+	top:9px;
+}
+#gestion #list td .relati .hover .delete{
+	position:absolute;
+	right:9px;
+	top:9px;
+}
+
+#gestion #list tr:nth-child(odd) {
+    background-color: #fafafa
+}
+#gestion #list tr:hover {
+    cursor: pointer
+}
+#gestion #list td {
+    padding: 0 3px
+}
+#gestion #list td.maj,
+#gestion #list td.ville {
+    text-transform: uppercase
+}
+#gestion #list td.prenom,
+#gestion #list td.entre {
+    text-transform: capitalize
+}
+#gestion #list td.adresse,
+#gestion #list td.email {
+    text-transform: lowercase
+}
+#gestion #list td a {
+    color: #313131;
+    text-decoration: none;
+}
+#gestion #list td a.delete,
+#gestion #list td a.edit {
+    display: block;
+    padding: 23px 0 0 26px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    background: #ff6c6f;
+    margin: 0 auto;
+}
+#gestion #list td a.delete:hover,
+#gestion #list td a.edit:hover {
+    background-color: #d95b5d
+}
+#gestion #list td a.delete {
+    padding: 4px 0 0 0;
+    width: 26px;
+    height: 19px;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+}
+#gestion #list td a.edit {
+    background: url(../img/icon-edit.png) #ff6c6f
+}
+#gestion #list .pt {
+    padding: 0;
+    text-align: center;
+    width: 45px;
+    font-size: 10px;
+    background-image: none !important;
+}
+#gestion .pagination{
+	margin:15px 0;
+	text-align:center;
+}
+#gestion .pagination ul{
+display:inline;
+text-align:center;
+}
+#gestion .pagination ul li{
+	display:inline-block;
+	list-style:none;
+	margin:0 3px;
+}
+#gestion .pagination ul li a{
+	background:#c4c4c4;
+	border-radius:20px;
+	height:16px;
+	width:20px;
+	padding-top:4px;
+	display:block;
+	color:#fff;
+	text-decoration:none;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+}
+#gestion .pagination ul li a.active{
+	background:#ff6c6f;
+}
+
+.footer {
+    text-align: center;
+    font-size: 10px;
+    margin: 10px 0;
+}
