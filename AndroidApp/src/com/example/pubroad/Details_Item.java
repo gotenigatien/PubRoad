@@ -293,7 +293,7 @@ public class Details_Item extends FragmentActivity {
     	   //----------------------------------------------------------------------------------------------
         
         LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
-        LocationProvider provider =locationManager.getProvider(LocationManager.NETWORK_PROVIDER);
+        LocationProvider provider =locationManager.getProvider(LocationManager.GPS_PROVIDER);
      // Retrieve a list of location providers that have fine accuracy, no monetary cost, etc
         Criteria criteria = new Criteria();
         criteria.setAccuracy(Criteria.ACCURACY_COARSE);

@@ -104,6 +104,5 @@ public class StockPubRoadAdapter extends ArrayAdapter {
 	        protected TextView Tel;
 	        protected Button SiteWeb;
 	        protected TextView ID;
-	        
 	    }
 }

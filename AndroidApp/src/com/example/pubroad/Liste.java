@@ -56,7 +56,7 @@ public class Liste extends FragmentActivity {
         Typeface brixton_book = Typeface.createFromAsset(getAssets(), "fonts/brixton_book.otf");
         TextView tv = (TextView) findViewById(R.id.title_header);
         tv.setTypeface(brixton_book);
-        Log.w("test", "14785" + getAddress_from_Location());
+        // Log.w("test", "A" + getAddress_from_Location());
         tv = (TextView) findViewById(R.id.textcount);
         tv.setTypeface(brixton_book);
 
@@ -90,6 +90,7 @@ public class Liste extends FragmentActivity {
 
                 }
             });
+            
             lv.setOnItemClickListener(new OnItemClickListener() {
                 public void onItemClick(AdapterView <? > parent, View view,
                     int position, long id) {
@@ -106,8 +107,7 @@ public class Liste extends FragmentActivity {
 
                 }
             });
-
-
+            
             Button btn_Desc = ((Button) findViewById(R.id.tri_desc));
             btn_Desc.setOnClickListener(new OnClickListener() {
                 public void onClick(View v) {
@@ -132,42 +132,34 @@ public class Liste extends FragmentActivity {
 
         } else {
             lv.setEmptyView(empty);
-
         }
     }
 
 
     private class DownloadFilesTask extends AsyncTask < String, Integer, ArrayList < PubRoadObject >> {
         ArrayList < PubRoadObject > annu = null;
-
-        @
-        Override
+        @Override
         protected ArrayList < PubRoadObject > doInBackground(String...urls) {
             wsd.open();
             WebServiceObject object = wsd.getWebServiceByID(1);
             wsd.close();
-
-
             WebService ws = new WebService();
             ws.seturl(object.getLink());
 
-            return ws.getListpubroad(getIntent().getExtras().getString("Who"), getIntent().getExtras().getString("Where"), "22 avenue chevreul 92600");
+            return ws.getListpubroad(getIntent().getExtras().getString("Who"), getIntent().getExtras().getString("Where"), getAddress_from_Location());
         }
 
         protected void onProgressUpdate(Integer...progress) {
             setProgress(progress[0]);
-
         }
 
         protected void onPostExecute(Long result) {
-
         }
 
 
     }
     public String getAddress_from_Location() {
         Location loc = getCurrentLocation();
-        
         List < Address > addresses = null;
         Geocoder geocoder = new Geocoder(this.getApplicationContext(), Locale.getDefault());
          try {
@@ -176,21 +168,18 @@ public class Liste extends FragmentActivity {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-
         Address add = addresses.get(0);
         String addressText = String.format("%s, %s, %s",
             add.getMaxAddressLineIndex() > 0 ? add.getAddressLine(0) : "",
             add.getLocality(),
             add.getCountryName());
-        Log.w("aaaaa", addressText);
         return addressText;
     }
     public Location getCurrentLocation() {
         //----------------------------------------------------------------------------------------------
-
         LocationManager locationManager = (LocationManager) this.getSystemService(LOCATION_SERVICE);  
         getSystemService(Context.LOCATION_SERVICE);
-        LocationProvider provider = locationManager.getProvider(LocationManager.NETWORK_PROVIDER);
+        LocationProvider provider = locationManager.getProvider(LocationManager.GPS_PROVIDER);
         // Retrieve a list of location providers that have fine accuracy, no monetary cost, etc
         Criteria criteria = new Criteria();
         criteria.setAccuracy(Criteria.ACCURACY_COARSE);

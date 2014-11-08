@@ -55,13 +55,11 @@ public class WebService{
 			params.add(new BasicNameValuePair("Who", who));
 			params.add(new BasicNameValuePair("Where", where));
 			params.add(new BasicNameValuePair("Place", place));
-
-			Log.w("ahsina", "seturl");
 			JSONObject json = jParser.makeHttpRequest(
 					url_Listpubroad, "GET", params);
-			Log.w("ahsina", "link "+url_Listpubroad+"?who=" +who +"&where=" +where +"&place="+place);
+			//Log.w("ahsina", "link "+url_Listpubroad+"?who=" +who +"&where=" +where +"&place="+place);
 
-			Log.d("List des result", json.toString());
+			//Log.d("List des result", json.toString());
 			
 
 			success = json.getInt(TAG_SUCCESS);

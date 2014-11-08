@@ -168,7 +168,6 @@ public class SearchActivity extends Activity {
 
         Address add = addresses.get(0);
         String addressText = add.getLocality();
-        Log.w("aaaaa", addressText);
         return addressText;
     }
     public Location getCurrentLocation() {
