@@ -11,18 +11,18 @@ import org.json.JSONObject;
 
 import android.app.Activity;
 import android.util.Log;
-import com.Object.AnnuaireObject;
+import com.Object.PubRoadObject;
 import com.Object.WebServiceObject;
 import com.Sqlite.WebServiceDataSource;
-import com.example.annuaire.MainActivity;
+import com.example.pubroad.MainActivity;
 
 
 
 public class WebService{
 	
 	JSONParser jParser = new JSONParser();
-	public ArrayList<AnnuaireObject> ListeAnnuaire = new ArrayList<AnnuaireObject>();
-	private static String url_ListAnnuaire = "";
+	public ArrayList<PubRoadObject> Listepubroad = new ArrayList<PubRoadObject>();
+	private static String url_Listpubroad = "";
 	private static final String TAG_SUCCESS = "success";
 	private static final String TAG_Results = "Results";
 	private static final String TAG_ID = "ID";
@@ -38,15 +38,15 @@ public class WebService{
 	
 
 	
-	JSONArray Annuaire ;
+	JSONArray pubroad ;
 	
 	public void seturl(String URL){
 				
-		url_ListAnnuaire=URL;
+		url_Listpubroad=URL;
 		
 	}
 	
-	public ArrayList<AnnuaireObject> getListAnnuaire(String who, String where, String place ){
+	public ArrayList<PubRoadObject> getListpubroad(String who, String where, String place ){
 		
 		int success;
 		try {
@@ -58,8 +58,8 @@ public class WebService{
 
 			Log.w("ahsina", "seturl");
 			JSONObject json = jParser.makeHttpRequest(
-					url_ListAnnuaire, "GET", params);
-			Log.w("ahsina", "link "+url_ListAnnuaire+"?who=" +who +"&where=" +where +"&place="+place);
+					url_Listpubroad, "GET", params);
+			Log.w("ahsina", "link "+url_Listpubroad+"?who=" +who +"&where=" +where +"&place="+place);
 
 			Log.d("List des result", json.toString());
 			
@@ -67,42 +67,42 @@ public class WebService{
 			success = json.getInt(TAG_SUCCESS);
 			if (success == 1) {
 
-				JSONArray AnnuaireObj = json
+				JSONArray pubroadObj = json
 						.getJSONArray(TAG_Results); 
 				
 
-				for (int i = 0; i < AnnuaireObj.length(); i++) {
-				JSONObject result = AnnuaireObj.getJSONObject(i);
-				AnnuaireObject objAnnuaire = new AnnuaireObject();
+				for (int i = 0; i < pubroadObj.length(); i++) {
+				JSONObject result = pubroadObj.getJSONObject(i);
+				PubRoadObject objpubroad = new PubRoadObject();
 				Log.w("arsene", "arsene "+result.getInt(TAG_ID));
-				objAnnuaire.setID(result.getInt(TAG_ID));
-				objAnnuaire.setIsParticulier(result.getBoolean(TAG_IsParticulier));
+				objpubroad.setID(result.getInt(TAG_ID));
+				objpubroad.setIsParticulier(result.getBoolean(TAG_IsParticulier));
 				if(result.getBoolean(TAG_IsParticulier)){
-				objAnnuaire.setNom(result.getString(TAG_NomComplet));
+				objpubroad.setNom(result.getString(TAG_NomComplet));
 				}else{
-					objAnnuaire.setNom(result.getString(TAG_Entreprise));
+					objpubroad.setNom(result.getString(TAG_Entreprise));
 					
 				}
-				objAnnuaire.setTel(result.getString(TAG_Tel));
-				objAnnuaire.setEmail(result.getString(TAG_Email));
-				objAnnuaire.setSiteWeb(result.getString(TAG_SiteWeb));
+				objpubroad.setTel(result.getString(TAG_Tel));
+				objpubroad.setEmail(result.getString(TAG_Email));
+				objpubroad.setSiteWeb(result.getString(TAG_SiteWeb));
 				
-				objAnnuaire.setAdresse(result.getString(TAG_Adresse));
-				objAnnuaire.setDistance(result.getInt(TAG_Distance));
-				objAnnuaire.setOccurance(result.getInt(TAG_Occurance));
-				objAnnuaire.setIsParticulier(result.getBoolean(TAG_IsParticulier));
+				objpubroad.setAdresse(result.getString(TAG_Adresse));
+				objpubroad.setDistance(result.getInt(TAG_Distance));
+				objpubroad.setOccurance(result.getInt(TAG_Occurance));
+				objpubroad.setIsParticulier(result.getBoolean(TAG_IsParticulier));
 
-				ListeAnnuaire.add(objAnnuaire);
+				Listepubroad.add(objpubroad);
 				
 				}
 				
 			}else{
-				ListeAnnuaire= null;
+				Listepubroad= null;
 			}
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
-		return ListeAnnuaire;
+		return Listepubroad;
 	}
 	
 }

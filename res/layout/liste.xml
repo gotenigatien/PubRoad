@@ -28,7 +28,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@+id/img_flash"
-                android:text="@string/annuaire"
+                android:text="@string/pubroad"
                 android:textColor="#fff"
                 android:textSize="35sp" />
 
@@ -122,39 +122,6 @@
             android:text="@string/proch"
             android:textColor="#ff6c6f"
             android:textSize="17.5sp" 
-            android:layout_centerVertical="true" />
-	    <Button
-            android:id="@+id/all"
-            android:layout_width="60dp"
-            android:layout_height="25dp"
-            android:layout_marginTop="35dp"
-            android:layout_marginLeft="-32.5dp"
-            android:layout_below="@+id/entreprise"
-            android:layout_alignLeft="@+id/entreprise"
-            android:text="@string/all"
-            android:textSize="12.5sp"
-            android:textColor="#fff"
-            android:background="@drawable/bg_header" />
-	     <Button
-            android:id="@+id/particulier"
-            android:layout_width="60dp"
-            android:layout_height="25dp"
-            android:text="@string/particuliers"
-            android:layout_marginLeft="200dp"
-            android:textSize="12.5sp"
-            android:textColor="#fff"
-            android:background="@drawable/bg_header" 
-            android:layout_centerVertical="true" />
-	        <Button
-            android:id="@+id/entreprise"
-            android:layout_width="60dp"
-            android:layout_height="25dp"
-            android:textColor="#fff"
-            android:layout_marginLeft="8dp"
-            android:layout_toRightOf="@+id/particulier"
-            android:text="@string/entreprises"
-            android:textSize="12.5sp"
-            android:background="@drawable/bg_header" 
             android:layout_centerVertical="true" />
 	        </RelativeLayout> 
 	        <RelativeLayout

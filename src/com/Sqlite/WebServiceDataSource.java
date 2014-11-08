@@ -41,8 +41,6 @@ public class WebServiceDataSource {
 	    values.put(MySQLiteHelper.COLUMN_DateAdd, DateAdd);
 	    long insertId = database.insert(MySQLiteHelper.TABLE_WebServices, null,
 	        values);
-
-	 
 	  }
 	  
 	  
@@ -93,9 +91,7 @@ public class WebServiceDataSource {
 			    
 			    long insertId =database.insert(MySQLiteHelper.TABLE_History, null,
 			        values);
-			    Log.w("hhh","insertID "+insertId);
 		  }
-		  Log.w("hhh","easy "+VerifID(ID));
 	  }
 	  
 	  

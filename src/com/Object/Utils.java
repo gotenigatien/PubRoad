@@ -10,22 +10,22 @@ import android.util.Base64;
 public class Utils{
 	
 
-	public ArrayList<AnnuaireObject> getOnlyParticulier(ArrayList<AnnuaireObject> Annuaire){
-		ArrayList<AnnuaireObject> Result = new ArrayList<AnnuaireObject>();
-		for (int i=0; i<Annuaire.size();i++){
-			Boolean Entreprise=Annuaire.get(i).getIsParticulier() ;
+	public ArrayList<PubRoadObject> getOnlyParticulier(ArrayList<PubRoadObject> pubroad){
+		ArrayList<PubRoadObject> Result = new ArrayList<PubRoadObject>();
+		for (int i=0; i<pubroad.size();i++){
+			Boolean Entreprise=pubroad.get(i).getIsParticulier() ;
 			if (Entreprise){
-				Result.add(Annuaire.get(i));
+				Result.add(pubroad.get(i));
 			}
 		}
 		return Result;
 	}
-	public ArrayList<AnnuaireObject> getOnlyEntreprise(ArrayList<AnnuaireObject> Annuaire){
-		ArrayList<AnnuaireObject> Result = new ArrayList<AnnuaireObject>() ;
-			for (int i=0; i<Annuaire.size();i++){
-				Boolean Entreprise=Annuaire.get(i).getIsParticulier() ;
+	public ArrayList<PubRoadObject> getOnlyEntreprise(ArrayList<PubRoadObject> pubroad){
+		ArrayList<PubRoadObject> Result = new ArrayList<PubRoadObject>() ;
+			for (int i=0; i<pubroad.size();i++){
+				Boolean Entreprise=pubroad.get(i).getIsParticulier() ;
 				if (!Entreprise){
-					Result.add(Annuaire.get(i));
+					Result.add(pubroad.get(i));
 				}
 			}
 		return Result;

@@ -21,7 +21,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 	  public static final String COLUMN_Adresse2 = "Adresse2";
 	  public static final String COLUMN_Date = "DateADD";
 
-	  private static final String DATABASE_NAME = "Annuaire.db";
+	  private static final String DATABASE_NAME = "pubroad.db";
 	  private static final int DATABASE_VERSION = 5;
 
 	  // Database creation sql statement

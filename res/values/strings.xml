@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Annuaire</string>
+    <string name="app_name">Pub Road</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="search">RECHERCHE</string>
     <string name="searcher">RECHERCHER</string>
     <string name="history">HISTORIQUE</string>
     <string name="about">&#192; PROPOS</string>
-    <string name="annuaire">ANNUAIRE</string>
+    <string name="pubroad">PUB ROAD</string>
     <string name="destination">Recherche une destination</string>
     <string name="warning">Attention!  Vous devez remplir tous les \nchamps du formulaire!</string>
     <string name="exemple">Exemple :</string>
-    <string name="msg1">Vous souhaitez rechercher l&#180;Institut du Groupe 4 et per-\nmettant une formation double comp&#233;tence situ&#233; &#224; Paris.</string>
-    <string name="msg2">Renseignez alors le champ &lt;&lt;Qui? Quoi? &gt;&gt; en spécifiant\n&lt;&lt;Institut G4&gt;&gt;.</string>
+    <string name="msg1">Vous souhaitez rechercher le Good Irish Bar situé à Paris.</string>
+    <string name="msg2">Renseignez alors le champ &lt;&lt;Qui? Quoi? &gt;&gt; en spécifiant\n&lt;&lt;Good Irish Bar&gt;&gt;.</string>
     <string name="msg3">Dans la ville de recherche, indiquez alors &lt;&lt;Paris&gt;&gt;.</string>
     <string name="msg4">Puis cliquer sur le bouton Rechercher.</string>
     <string name="about_about">&#192; propos</string>
-    <string name="msg1_about">Nous sommes une équipe d&#180;élèves ingénieur en\nmultimédia et management de l&#180;Institut G4 de Paris.</string>
-    <string name="msg2_about">Il nous été donné de réaliser une application\nmobile native d&#180;annuaire généraliste.</string>
-    <string name="msg3_about">L&#180;objectif est de proposer de entrées\n d&#180;annuaires d&#180;entreprises et de particuliers sous forme\nde liste et de positionnement géographique. </string>
-    <string name="msg4_about">Notre choix s&#180;est porté sur une application Android\nmoderne et illeligible de tous Le design so 2013 permet\nde toucher un large public, tant au niveau du graphisme\nqu&#180;au niveau de son fonctionement. </string>
-    <string name="msg5_about">Ce projet a été ralisé par l&#180;équipe de Wassim AHSINA.</string>
-    <string name="names_about">Les acteurs de cette création sont :\nArsène MABOM, développeur Android,\nGatien GOTENI, développeur Android,\nGuillaume ZAGINI, développeur web,\nMarine DELBECK, designer.</string>
+    <string name="msg1_about">Nous sommes une équipe d´élèves ingénieurs à l´ESIEA.</string>
+    <string name="msg2_about">Il nous été donné de réaliser une application android mobile généraliste.</string>
+    <string name="msg3_about">L´objectif est de proposer de entrées\n de bars ou pubs sous forme\nde liste et de positionnement géographique. </string>
+    <string name="msg4_about">Notre choix s´est porté sur une application Android\nmoderne et accessible à tous Le design choisi nous permet\nde toucher un large public, tant au niveau du graphisme\nqu´au niveau de son fonctionement. </string>
+    <string name="msg5_about"></string>
+    <string name="names_about">Les acteurs de cette création sont :\n\nGatien GOTENI,\n Hajar MALIL.</string>
     <string name="history_history">Historique de recherche</string>
     <string name="history_recent">La plus récente</string>
     <string name="delete_history">Supprimer tout</string>
-    <string name="history_ex">Institut G4</string>
-    <string name="history_ad">39 rue de Moscou, 75008 Paris</string>
+    <string name="history_ex">ESIEA</string>
+    <string name="history_ad">16 rue de Moscou, 75008 Paris</string>
     <string name="search_ex_1">Qui ? Quoi ?</string>
     <string name="search_ex_2">Ville, CP</string>
     <string name="title_activity_liste">Liste</string>

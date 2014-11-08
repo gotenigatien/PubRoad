@@ -30,7 +30,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@+id/img_flash"
-                android:text="@string/annuaire"
+                android:text="@string/pubroad"
                 android:textSize="35sp" />
 
             <ImageView
@@ -100,27 +100,14 @@
                 android:ems="10"
                 android:hint="@string/search_ex_1"
                 android:paddingLeft="10dp" />
-
-            <EditText
-                android:id="@+id/editText2"
-                android:layout_width="wrap_content"
-                android:layout_height="32dp"
-                android:layout_alignLeft="@+id/editText1"
-                android:layout_alignRight="@+id/editText1"
-                android:layout_below="@+id/editText1"
-                android:layout_marginTop="6dp"
-                android:background="@color/input"
-                android:ems="10"
-                android:paddingLeft="10dp"
-                android:hint="@string/search_ex_2" />
            <Button
             android:id="@+id/rechercher"
             android:layout_width="100dp"
             android:layout_height="33dp"
             android:layout_marginTop="12dp"
             android:layout_marginLeft="3dp"
-            android:layout_alignLeft="@+id/editText2"
-            android:layout_below="@+id/editText2"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_below="@+id/editText1"
             android:textSize="16sp"
             android:text="@string/searcher"
             android:background="@drawable/bg_header"

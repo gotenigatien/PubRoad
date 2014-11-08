@@ -34,8 +34,7 @@ public class JSONParser {
 
 	// function get json from url
 	// by making HTTP POST or GET mehtod
-	public JSONObject makeHttpRequest(String url, String method,
-			List<NameValuePair> params) {
+	public JSONObject makeHttpRequest(String url, String method,List<NameValuePair> params) {
 
 		// Making HTTP request
 		try {
@@ -62,6 +61,7 @@ public class JSONParser {
 				HttpResponse httpResponse = httpClient.execute(httpGet);
 				HttpEntity httpEntity = httpResponse.getEntity();
 				is = httpEntity.getContent();
+
 			}			
 			
 
@@ -74,8 +74,7 @@ public class JSONParser {
 		}
 
 		try {
-			BufferedReader reader = new BufferedReader(new InputStreamReader(
-					is, "iso-8859-1"), 8);
+			BufferedReader reader = new BufferedReader(new InputStreamReader(is, "iso-8859-1"), 8);
 			StringBuilder sb = new StringBuilder();
 			String line = null;
 			while ((line = reader.readLine()) != null) {

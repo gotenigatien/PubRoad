@@ -28,7 +28,7 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@+id/img_flash"
-        android:text="@string/annuaire"
+        android:text="@string/pubroad"
         android:textSize="35sp" />
 
     <ImageView

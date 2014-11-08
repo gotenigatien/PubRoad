@@ -28,7 +28,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@+id/img_flash"
-                android:text="@string/annuaire"
+                android:text="@string/pubroad"
                 android:textColor="#fff"
                 android:textSize="35sp" />
 
@@ -58,6 +58,13 @@
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:src="@drawable/icon_single" />
+			<ImageView
+            android:id="@+id/img_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/star" />
 
 			<TextView
             android:id="@+id/txtNom"
@@ -65,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"
-            android:layout_toRightOf="@+id/img_single"
+            android:layout_toRightOf="@+id/img_star"
             android:text="@string/about_about"
             android:textSize="21dp" />
     </RelativeLayout>
@@ -214,7 +221,7 @@
            android:layout_marginLeft="5dp"
            android:textSize="13sp" />
         </RelativeLayout>
-        
+     <!--     
    <RelativeLayout
        android:id="@+id/relativeLayout9"
        android:layout_width="330dp"
@@ -230,8 +237,8 @@
 		           android:text="Votre position"
 		           android:background="#ff6c6f"
 		           android:textSize="13sp" />
-		              
-		              <Textview
+		               
+		              <TextView
 		                  android:id="@+id/distance"
 		                  android:layout_width="wrap_content"
 		                  android:layout_height="wrap_content"
@@ -239,6 +246,7 @@
 		                  android:layout_marginLeft="200dp"
 		                  android:text="kezezm"
 		                  android:textSize="13sp" />
+		                
 
 		              <Button
 		           android:id="@+id/placeloc"
@@ -248,22 +256,22 @@
 		           android:text="Lieu"
 		           android:background="#ff6c6f"
 		           android:textSize="13sp" />
-              </RelativeLayout>
+              </RelativeLayout>-->
         <RelativeLayout
 		             
 		            android:id="@+id/relativeLayout6"
 		            android:layout_width="330dp"
 		            android:layout_marginTop="6dp"
-    	    		android:layout_alignLeft="@id/relativeLayout9"
+    	    		android:layout_alignLeft="@id/relativeLayout5"
 		            android:layout_height="210dp"
-		            android:layout_below="@id/relativeLayout9"
+		            android:layout_below="@id/relativeLayout5"
 		            android:background="#e6e6e6" >
 		
-		 <fragment
+		  <fragment
 		    android:id="@+id/gmap"
 		    android:layout_centerInParent="true"
 		    android:layout_width="320dp"
 		    android:layout_height="200dp"
-		    class="com.google.android.gms.maps.SupportMapFragment" />
+		    class="com.google.android.gms.maps.SupportMapFragment" /> 
 		</RelativeLayout>
 </RelativeLayout>

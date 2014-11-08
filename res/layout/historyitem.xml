@@ -30,14 +30,14 @@
 	            android:layout_marginLeft="5dp"
 	            android:src="@drawable/pointer_result"
 	             />
-			<TextView
+			<!--  <TextView
 		            android:id="@+id/txtID"
 		            android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		            android:layout_toEndOf="@+id/img_pointer_result"
 					android:visibility="invisible"
 		            android:textSize="13sp"
-		            android:focusable="false" />
+		            android:focusable="false" />-->
 	        <TextView
 	            android:id="@+id/history_ex"
 	            android:layout_width="wrap_content"

@@ -11,12 +11,12 @@ import org.json.JSONObject;
 
 import android.util.Log;
 
-import com.Object.AnnuaireObjectDetail;
+import com.Object.PubRoadObjectDetail;
 
 public class WebServiceDetail {
 	JSONParser jParser = new JSONParser();
-	public AnnuaireObjectDetail Annuaire = new AnnuaireObjectDetail();
-	private static String url_Annuaire = "";
+	public PubRoadObjectDetail pubroad = new PubRoadObjectDetail();
+	private static String url_pubroad = "";
 	private static final String TAG_SUCCESS = "success";
 	private static final String TAG_Results = "Results";
 	private static final String TAG_ID = "ID";
@@ -35,12 +35,12 @@ public class WebServiceDetail {
 	private static final String TAG_IsParticulier = "isParticulier";
 	public void seturl(String URL){
 		
-		url_Annuaire=URL;
+		url_pubroad=URL;
 		
 	}
-	JSONArray JAnnuaire ;
+	JSONArray Jpubroad ;
 	
-	public AnnuaireObjectDetail getDetail(int id , String place){
+	public PubRoadObjectDetail getDetail(int id , String place){
 		int success;
 		try {
 
@@ -49,52 +49,52 @@ public class WebServiceDetail {
 			params.add(new BasicNameValuePair("Place", place));
 
 			JSONObject json = jParser.makeHttpRequest(
-					url_Annuaire, "GET", params);
+					url_pubroad, "GET", params);
 
 			Log.d("List des result du details", json.toString());
 
 			success = json.getInt(TAG_SUCCESS);
 			if (success == 1) {
 				
-				JSONArray AnnuaireObj = json
+				JSONArray pubroadObj = json
 						.getJSONArray(TAG_Results); 
 
-				JSONObject result = AnnuaireObj.getJSONObject(0);
-				AnnuaireObjectDetail objAnnuaire = new AnnuaireObjectDetail();
+				JSONObject result = pubroadObj.getJSONObject(0);
+				PubRoadObjectDetail objpubroad = new PubRoadObjectDetail();
 				
-				objAnnuaire.setID(result.getInt(TAG_ID)); 
-				objAnnuaire.setTel(result.getString(TAG_Tel)); 
-				objAnnuaire.setFax(result.getString(TAG_Fax));
-				objAnnuaire.setEmail(result.getString(TAG_Email));
-				objAnnuaire.setSiteWeb(result.getString(TAG_SiteWeb));
-				objAnnuaire.setIsParticulier(result.getBoolean(TAG_IsParticulier));
-				if(objAnnuaire.getIsParticulier()) {
-					Log.w("ahsina", "nooooo "+objAnnuaire.getIsParticulier());
-					objAnnuaire.setNom(result.getString(TAG_NomComplet)); 
+				objpubroad.setID(result.getInt(TAG_ID)); 
+				objpubroad.setTel(result.getString(TAG_Tel)); 
+				objpubroad.setFax(result.getString(TAG_Fax));
+				objpubroad.setEmail(result.getString(TAG_Email));
+				objpubroad.setSiteWeb(result.getString(TAG_SiteWeb));
+				objpubroad.setIsParticulier(result.getBoolean(TAG_IsParticulier));
+				if(objpubroad.getIsParticulier()) {
+					Log.w("ahsina", "nooooo "+objpubroad.getIsParticulier());
+					objpubroad.setNom(result.getString(TAG_NomComplet)); 
 				} 
 				else 
 				{
 					Log.w("ahsina", "yeeees");
-					objAnnuaire.setNom(result.getString(TAG_Entreprise));
+					objpubroad.setNom(result.getString(TAG_Entreprise));
 				}
-				objAnnuaire.setDescription(result.getString(TAG_Description));
-				objAnnuaire.setAdresse(result.getString(TAG_Adresse));
-				objAnnuaire.setAdresse2(result.getString(TAG_Adresse2));
-				objAnnuaire.setDistance(result.getInt(TAG_Distance));
-				objAnnuaire.setPhoto(result.getString(TAG_Photo));
-				objAnnuaire.setPlageHoraire(result.getString(TAG_PlageHoraire));
-				Log.w("ahsina","fils de pute");
+				objpubroad.setDescription(result.getString(TAG_Description));
+				objpubroad.setAdresse(result.getString(TAG_Adresse));
+				objpubroad.setAdresse2(result.getString(TAG_Adresse2));
+				objpubroad.setDistance(result.getInt(TAG_Distance));
+				objpubroad.setPhoto(result.getString(TAG_Photo));
+				objpubroad.setPlageHoraire(result.getString(TAG_PlageHoraire));
+				Log.w("ahsina","fghfh");
 				//Log.w("zeb","zbouba"+result.getString(TAG_Description));
-				Annuaire= objAnnuaire;
+				pubroad= objpubroad;
 			}else{
 				
-				Annuaire= null;
+				pubroad= null;
 			}
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
-		Log.w("zeb","zbouba"+Annuaire.getNom());
-		return Annuaire;
+		Log.w("fghgf","fghf"+pubroad.getNom());
+		return pubroad;
 		
 	}
 }
