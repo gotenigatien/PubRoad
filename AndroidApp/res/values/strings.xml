@@ -12,10 +12,9 @@
     <string name="destination">Recherche une destination</string>
     <string name="warning">Attention!  Vous devez remplir tous les \nchamps du formulaire!</string>
     <string name="exemple">Exemple :</string>
-    <string name="msg1">Vous souhaitez rechercher le Good Irish Bar situé à Paris.</string>
-    <string name="msg2">Renseignez alors le champ &lt;&lt;Qui? Quoi? &gt;&gt; en spécifiant\n&lt;&lt;Good Irish Bar&gt;&gt;.</string>
-    <string name="msg3">Dans la ville de recherche, indiquez alors &lt;&lt;Paris&gt;&gt;.</string>
-    <string name="msg4">Puis cliquer sur le bouton Rechercher.</string>
+    <string name="msg1">Vous souhaitez rechercher un Irish Bar autour de vous  tappez alors : Irish Bar</string>
+    <string name="msg2">Renseignez alors le champ &lt;&lt;Quoi? &gt;&gt; en spécifiant\n&lt;&lt;Irish Bar&gt;&gt;.</string>
+     <string name="msg4">Puis cliquer sur le bouton Rechercher.</string>
     <string name="about_about">&#192; propos</string>
     <string name="msg1_about">Nous sommes une équipe d´élèves ingénieurs à l´ESIEA.</string>
     <string name="msg2_about">Il nous été donné de réaliser une application android mobile généraliste.</string>

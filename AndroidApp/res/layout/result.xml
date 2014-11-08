@@ -188,22 +188,13 @@
             android:text="@string/msg2"
             android:textSize="14sp" />
 
-        <TextView
-            android:id="@+id/msg3_search"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/msg2_search"
-            android:layout_below="@+id/msg2_search"
-            android:layout_marginTop="8dp"
-            android:text="@string/msg3"
-            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/msg4_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/msg3_search"
-            android:layout_below="@+id/msg3_search"
+            android:layout_alignLeft="@+id/msg2_search"
+            android:layout_below="@+id/msg2_search"
             android:layout_marginTop="8dp"
             android:text="@string/msg4"
             android:textSize="14sp" />

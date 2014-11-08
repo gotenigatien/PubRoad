@@ -69,8 +69,6 @@ public class SearchActivity extends Activity {
 			tv = (TextView) findViewById(R.id.msg2_search);
 			tv.setTypeface(brixton_book);
 
-			tv = (TextView) findViewById(R.id.msg3_search);
-			tv.setTypeface(brixton_book);
 
 			tv = (TextView) findViewById(R.id.msg4_search);
 			tv.setTypeface(brixton_book);

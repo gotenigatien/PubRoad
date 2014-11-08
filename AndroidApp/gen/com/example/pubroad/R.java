@@ -197,18 +197,17 @@ containing a value of this type.
         public static final int info_pad=0x7f080019;
         public static final int item_layoutnumber=0x7f080036;
         public static final int liste_proch=0x7f08004b;
-        public static final int loader=0x7f080059;
-        public static final int loaderlayout=0x7f080058;
+        public static final int loader=0x7f080058;
+        public static final int loaderlayout=0x7f080057;
         public static final int lvListe=0x7f080041;
-        public static final int menu_settings=0x7f08005b;
+        public static final int menu_settings=0x7f08005a;
         public static final int msg1_about=0x7f08000e;
         public static final int msg1_search=0x7f080054;
         public static final int msg2_about=0x7f08000f;
         public static final int msg2_search=0x7f080055;
         public static final int msg3_about=0x7f080010;
-        public static final int msg3_search=0x7f080056;
         public static final int msg4_about=0x7f080011;
-        public static final int msg4_search=0x7f080057;
+        public static final int msg4_search=0x7f080056;
         public static final int msg5_about=0x7f080012;
         public static final int msg_warning=0x7f080052;
         public static final int names_about=0x7f080013;
@@ -235,7 +234,7 @@ containing a value of this type.
         public static final int site_web=0x7f080033;
         public static final int terrain=0x7f080004;
         public static final int textView2=0x7f080048;
-        public static final int text_load=0x7f08005a;
+        public static final int text_load=0x7f080059;
         public static final int textcount=0x7f080046;
         public static final int title_h=0x7f080006;
         public static final int title_header=0x7f080007;
@@ -270,8 +269,8 @@ containing a value of this type.
     }
     public static final class string {
         public static final int about=0x7f040017;
-        public static final int about_about=0x7f040020;
-        public static final int all=0x7f04003a;
+        public static final int about_about=0x7f04001f;
+        public static final int all=0x7f040039;
         public static final int app_name=0x7f040011;
         /**   Title for notification shown when GooglePlayServices is unavailable [CHAR LIMIT=70] 
          */
@@ -335,44 +334,43 @@ containing a value of this type.
         find the service-side assets. [CHAR LIMIT=25] 
          */
         public static final int common_signin_button_text_long=0x7f04000d;
-        public static final int delete_history=0x7f040029;
+        public static final int delete_history=0x7f040028;
         public static final int destination=0x7f040019;
-        public static final int email=0x7f040039;
-        public static final int entreprises=0x7f040034;
+        public static final int email=0x7f040038;
+        public static final int entreprises=0x7f040033;
         public static final int exemple=0x7f04001b;
         public static final int hello_world=0x7f040012;
         public static final int history=0x7f040016;
-        public static final int history_ad=0x7f04002b;
-        public static final int history_ex=0x7f04002a;
-        public static final int history_history=0x7f040027;
-        public static final int history_recent=0x7f040028;
+        public static final int history_ad=0x7f04002a;
+        public static final int history_ex=0x7f040029;
+        public static final int history_history=0x7f040026;
+        public static final int history_recent=0x7f040027;
         public static final int menu_settings=0x7f040013;
         public static final int msg1=0x7f04001c;
-        public static final int msg1_about=0x7f040021;
+        public static final int msg1_about=0x7f040020;
         public static final int msg2=0x7f04001d;
-        public static final int msg2_about=0x7f040022;
-        public static final int msg3=0x7f04001e;
-        public static final int msg3_about=0x7f040023;
-        public static final int msg4=0x7f04001f;
-        public static final int msg4_about=0x7f040024;
-        public static final int msg5_about=0x7f040025;
-        public static final int names_about=0x7f040026;
-        public static final int ou=0x7f040032;
-        public static final int particuliers=0x7f040033;
-        public static final int pour=0x7f040030;
-        public static final int proch=0x7f040035;
+        public static final int msg2_about=0x7f040021;
+        public static final int msg3_about=0x7f040022;
+        public static final int msg4=0x7f04001e;
+        public static final int msg4_about=0x7f040023;
+        public static final int msg5_about=0x7f040024;
+        public static final int names_about=0x7f040025;
+        public static final int ou=0x7f040031;
+        public static final int particuliers=0x7f040032;
+        public static final int pour=0x7f04002f;
+        public static final int proch=0x7f040034;
         public static final int pubroad=0x7f040018;
-        public static final int quiquoi=0x7f040031;
-        public static final int result_txt=0x7f04002f;
+        public static final int quiquoi=0x7f040030;
+        public static final int result_txt=0x7f04002e;
         public static final int search=0x7f040014;
-        public static final int search_ex_1=0x7f04002c;
-        public static final int search_ex_2=0x7f04002d;
+        public static final int search_ex_1=0x7f04002b;
+        public static final int search_ex_2=0x7f04002c;
         public static final int searcher=0x7f040015;
-        public static final int site_web=0x7f040036;
-        public static final int title_activity_details__item=0x7f040037;
-        public static final int title_activity_liste=0x7f04002e;
+        public static final int site_web=0x7f040035;
+        public static final int title_activity_details__item=0x7f040036;
+        public static final int title_activity_liste=0x7f04002d;
         public static final int warning=0x7f04001a;
-        public static final int web=0x7f040038;
+        public static final int web=0x7f040037;
     }
     public static final class style {
         /** 
