@@ -17,6 +17,11 @@ Vous trouverez la libraire google play services sous https://github.com/goteniga
 
 Un fichier descriptif du projet est egalement présent sur : https://github.com/gotenigatien/PubRoad/tree/master/Doc
 
+Le site web qui gere la liste des bars se trouvent sous : http://gotenigatien.fr/appa/index.php
+
+Login : prof
+MdP : l3pr0fd055en0+te
+
 LE FICHIER APK SE TROUVE SOUS https://github.com/gotenigatien/PubRoad/tree/master/APK%20FILE
 
 Pour installer l'application et la lancer en local il faudra :
