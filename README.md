@@ -15,7 +15,9 @@ Vous trouverez le code source du site web (uniquement la partie concerné par la
 
 Vous trouverez la libraire google play services sous https://github.com/gotenigatien/PubRoad/tree/master/google-play-services_lib
 
-Un fichier descriptif du projet est egalement présent sur :
+Un fichier descriptif du projet est egalement présent sur : https://github.com/gotenigatien/PubRoad/tree/master/Doc
+
+LE FICHIER APK SE TROUVE SOUS https://github.com/gotenigatien/PubRoad/tree/master/APK%20FILE
 
 Pour installer l'application et la lancer en local il faudra :
 -Installer Eclispe ADT version donné par google ici http://developer.android.com/tools/sdk/eclipse-adt.html
@@ -23,4 +25,3 @@ Pour installer l'application et la lancer en local il faudra :
 -Dans les propriétés du projet a l'onglet Android rajouté la librairie google play services
 
 Gatien GOTENI, Hajar MALIL
-PubRoad
