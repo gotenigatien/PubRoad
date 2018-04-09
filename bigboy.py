@@ -6,7 +6,6 @@ a=0
 while a == 0:
     a=1
     driver = TorBrowserDriver("/home/ngatseoya/Downloads/tor-browser_en-US")
-    driver.get('https://www.piratestudios.co.uk/contestants/brook-bali/')
     k = 0
     n=10
     while k <= 10:
